@@ -23,7 +23,7 @@ You can change Redmine version and Ruby version in `playbook.yml`
 
 **3) Install Vagrant plugin for VirtualBox**
 
-`# vagrant plugin installvagrant-vbguest`
+`# vagrant plugin install vagrant-vbguest`
 
 **4) Add CentOS 7 image for VirtualBox**
 
