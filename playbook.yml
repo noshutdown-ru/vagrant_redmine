@@ -78,6 +78,11 @@
         repo: 'https://github.com/noshutdown-ru/ttm.git'
         dest: /opt/redmine/plugins/ttm
 
+    - name: Install Redexporter plugin
+      git:
+        repo: 'https://github.com/noshutdown-ru/redexporter.git'
+        dest: /opt/redmine/plugins/redexporter    
+
     - name: Install Redmine    
       shell: |
         source /root/.bashrc
