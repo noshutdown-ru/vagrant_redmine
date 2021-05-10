@@ -10,8 +10,8 @@
 This project allows you faster run locally Redmine.
 
 * OS CentOS 7
-* Ruby 2.3.3
-* Redmine 3.4.4
+* Ruby 2.7.3
+* Redmine 4.2.1
 
 You can change Redmine version and Ruby version in `playbook.yml` 
 
@@ -37,7 +37,6 @@ You can change Redmine version and Ruby version in `playbook.yml`
 
 ```
 # cd ./vagrant_redmine
-# ssh-keygen -f vagrant
 ```
 
 **7) Start VM**

@@ -4,8 +4,8 @@
   user: vagrant
   vars:
     TIMEZONE: UTC
-    REDMINE_VERSION: 3.4.4
-    RUBY_VERSION: 2.3.3  
+    REDMINE_VERSION: 4.2.1
+    RUBY_VERSION: 2.7.3
   tasks:
     - name: Set timezone to {{ TIMEZONE }}
       timezone:
@@ -54,15 +54,6 @@
       copy:
         src: ./templates/database.yml
         dest: /opt/redmine/config/database.yml
-        force: yes
-        group: root
-        owner: root
-        mode: 0600
-
-    - name: Copy assets.rb
-      copy:
-        src: ./templates/assets.rb
-        dest: /opt/redmine/config/initializers/assets.rb
         force: yes
         group: root
         owner: root
